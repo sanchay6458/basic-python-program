@@ -6,10 +6,7 @@
 
 # exaple:-
 
-from tkinter import E
-
-
-class smart:
+class smart:  #pairent class create
     b='sanchay'
     c= 'smart'
     a= 3
@@ -18,3 +15,11 @@ class smart:
         return self.b
         e = 5
         return e
+class good(smart):  #chield class create of mart class
+    def add(self): # create method in chield class
+        return self.a + self.b #use pairent class attribute
+
+obj = good() #create object for chield class good
+print(obj.add()) # calling the method in chield class
+
+
